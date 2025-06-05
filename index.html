@@ -1074,6 +1074,560 @@
                 gap: 1rem;
             }
         }
+
+        /* Education & Experience Section */
+/* Education & Experience Section */
+#education-experience {
+    background: #1d1d2e;
+    padding: 80px 0;
+}
+
+.highlight {
+    color: white;
+    font-weight: 600;
+}
+
+.edu-exp-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.edu-exp-column {
+    background: rgb(51, 51, 51);
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    color: black;
+}
+
+.column-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #f0f0f6;
+    color: white;
+}
+
+.column-header .icon {
+    font-size: 24px;
+    color: white;
+    margin-right: 15px;
+}
+
+.column-header h2 {
+    margin: 0;
+    font-size: 24px;
+    color: white;
+}
+
+/* Timeline styling */
+.timeline {
+    position: relative;
+    padding-left: 30px;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 2px;
+    background: #8a2be2;
+}
+
+/* Card styling */
+.card {
+    background: #f0f0f0;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    position: relative;
+    border-left: 3px solid #e0e0e0;
+    transition: all 0.3s ease;
+    color: black;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    will-change: transform, box-shadow;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(138, 43, 226, 0.1) 0%, rgba(138, 43, 226, 0) 100%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: -1;
+}
+
+.card:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 15px 30px -5px rgba(138, 43, 226, 0.3), 
+                0 10px 20px -10px rgba(138, 43, 226, 0.2);
+    border-left-color: #8a2be2;
+}
+
+
+.highlight-card {
+    border-left-color: black;
+    background: #f8f7ff;
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.card-header h4 {
+    margin: 0;
+    font-size: 18px;
+    color: black;
+}
+
+
+.pill {
+    --transition-speed: 0.2s;
+    font-size: 0.75rem; /* 12px */
+    padding: 0.25rem 0.75rem; /* 4px 12px */
+    border-radius: 2rem; /* 32px */
+    font-weight: 600;
+    color: white;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    transition: 
+        transform var(--transition-speed) ease,
+        box-shadow var(--transition-speed) ease,
+        background-color var(--transition-speed) ease;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+    line-height: 1;
+    border: none;
+    cursor: default;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    text-shadow: 0 1px 1px rgba(0,0,0,0.2);
+}
+
+/* Color Variants */
+.pill.current {
+    background: linear-gradient(135deg, #8a2be2 0%, #5e17eb 100%);
+}
+
+.pill.distinction {
+    background: linear-gradient(135deg, #4CAF50 0%, #2E7D32 100%);
+}
+
+.pill.gpa {
+    background: linear-gradient(135deg, #2196F3 0%, #0D47A1 100%);
+}
+
+.pill.internship {
+    background: linear-gradient(135deg, #FF9800 0%, #F57C00 100%);
+}
+
+/* Hover Effects */
+.pill:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 3px 6px rgba(0,0,0,0.15);
+}
+
+.pill.current:hover {
+    background: linear-gradient(135deg, #9b3cf3 0%, #6e25f5 100%);
+}
+
+.pill.distinction:hover {
+    background: linear-gradient(135deg, #5CB860 0%, #3E8E41 100%);
+}
+
+.pill.gpa:hover {
+    background: linear-gradient(135deg, #42A5F5 0%, #1E56C1 100%);
+}
+
+.pill.internship:hover {
+    background: linear-gradient(135deg, #FFA726 0%, #FB8C00 100%);
+}
+
+/* Active/Pressed State */
+.pill:active {
+    transform: translateY(0);
+    box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+}
+
+/* Inner Glow Effect */
+.pill::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(255,255,255,0.15) 0%, rgba(255,255,255,0) 100%);
+    opacity: 0.7;
+    transition: opacity var(--transition-speed) ease;
+}
+
+.pill:hover::before {
+    opacity: 1;
+}
+
+/* Ripple Effect */
+.pill::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 5px;
+    height: 5px;
+    background: rgba(255,255,255,0.5);
+    opacity: 0;
+    border-radius: 100%;
+    transform: scale(1, 1) translate(-50%, -50%);
+    transform-origin: 50% 50%;
+}
+
+.pill:active::after {
+    animation: pillRipple 0.4s ease-out;
+}
+
+@keyframes pillRipple {
+    0% {
+        transform: scale(0, 0) translate(-50%, -50%);
+        opacity: 0.5;
+    }
+    100% {
+        transform: scale(20, 20) translate(-50%, -50%);
+        opacity: 0;
+    }
+}
+
+/* Optional: Icon Support */
+.pill i {
+    margin-right: 4px;
+    font-size: 0.65rem;
+}
+
+.institution, .company, .duration, .focus {
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+    font-size: 14px;
+    color: black;
+}
+
+.institution i, .company i, .duration i, .focus i {
+    margin-right: 8px;
+    font-size: 14px;
+    color: black;
+}
+
+.responsibilities {
+    margin: 15px 0;
+    padding-left: 20px;
+    color: black;
+}
+
+.responsibilities li {
+    margin-bottom: 8px;
+    position: relative;
+    list-style-type: none;
+    color: black;
+}
+
+.responsibilities li i {
+    color: black;
+    margin-right: 8px;
+    font-size: 12px;
+}
+
+/* Tech stack styling */
+.tech-stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 15px;
+}
+
+.tech-pill {
+    padding: 6px 14px;
+    border-radius: 24px;
+    font-size: 12px;
+    font-weight: 600;
+    color: white;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    border: none;
+    margin: 3px;
+    text-shadow: 0 1px 1px rgba(0,0,0,0.2);
+    z-index: 1;
+    cursor: default;
+}
+
+.tech-pill::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(255,255,255,0.15) 0%, rgba(255,255,255,0) 100%);
+    opacity: 0.7;
+    z-index: -1;
+    transition: opacity 0.3s ease;
+}
+
+.tech-pill::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 5px;
+    height: 5px;
+    background: rgba(255,255,255,0.5);
+    opacity: 0;
+    border-radius: 100%;
+    transform: scale(1, 1) translate(-50%, -50%);
+    transform-origin: 50% 50%;
+}
+
+.tech-pill:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    color: white;
+}
+
+.tech-pill:hover::before {
+    opacity: 1;
+}
+
+.tech-pill:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.tech-pill:active::after {
+    animation: ripple 0.4s ease-out;
+}
+
+@keyframes ripple {
+    0% {
+        transform: scale(0, 0) translate(-50%, -50%);
+        opacity: 0.5;
+    }
+    100% {
+        transform: scale(20, 20) translate(-50%, -50%);
+        opacity: 0;
+    }
+}
+
+/* Color Variations */
+.tech-pill.frontend {
+    background: linear-gradient(135deg, #43cea2 0%, #185a9d 100%);
+}
+
+.tech-pill.backend {
+    background: linear-gradient(135deg, #ff7e5f 0%, #feb47b 100%);
+}
+
+.tech-pill.database {
+    background: linear-gradient(135deg, #a18cd1 0%, #fbc2eb 100%);
+}
+
+.tech-pill.cloud {
+    background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+}
+
+.tech-pill.ai {
+    background: linear-gradient(135deg, #ff758c 0%, #ff7eb3 100%);
+}
+
+.tech-pill.testing {
+    background: linear-gradient(135deg, #d4fc79 0%, #96e6a1 100%);
+    color: #333;
+    text-shadow: none;
+}
+
+.tech-pill.devops {
+    background: linear-gradient(135deg, #a6c1ee 0%, #fbc2eb 100%);
+}
+
+/* Icon Integration */
+.tech-pill i {
+    margin-right: 5px;
+    font-size: 11px;
+}
+
+/* Special Highlight */
+.tech-pill.highlight {
+    animation: pulse 2s infinite;
+    box-shadow: 0 0 0 0 rgba(74, 144, 226, 0.7);
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(74, 144, 226, 0.7);
+    }
+    70% {
+        box-shadow: 0 0 0 8px rgba(74, 144, 226, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(74, 144, 226, 0);
+    }
+}
+
+/* Certifications section */
+.certifications-section {
+    margin-top: 30px;
+    color: black;
+}
+
+.subsection-title {
+    font-size: 18px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.subsection-title i {
+    margin-right: 10px;
+    color: white;
+}
+
+.certification-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 10px;
+}
+
+.certification-pill {
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 13px;
+    text-align: center;
+    color: white;
+    font-weight: 600;
+    border: none;
+    background: linear-gradient(135deg, #6e45e2 0%, #89d4cf 100%);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    display: inline-block;
+    margin: 4px;
+    text-shadow: 0 1px 1px rgba(0,0,0,0.2);
+}
+
+.certification-pill::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0) 100%);
+}
+
+.certification-pill:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    background: linear-gradient(135deg, #8a2be2 0%, #5ec7c1 100%);
+}
+
+.certification-pill:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.certification-pill.distinction {
+    background: linear-gradient(135deg, #FF9A8B 0%, #FF6B95 50%, #FF8E53 100%);
+    animation: pulse 2s infinite;
+}
+
+.certification-pill.distinction:hover {
+    background: linear-gradient(135deg, #FF7B6B 0%, #FF4B7D 50%, #FF6E33 100%);
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(255, 107, 149, 0.7);
+    }
+    70% {
+        box-shadow: 0 0 0 8px rgba(255, 107, 149, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(255, 107, 149, 0);
+    }
+}
+
+/* Color variations for different categories */
+.certification-pill.tech {
+    background: linear-gradient(135deg, #4776E6 0%, #8E54E9 100%);
+}
+
+.certification-pill.hr {
+    background: linear-gradient(135deg, #FF5F6D 0%, #FFC371 100%);
+}
+
+.certification-pill.law {
+    background: linear-gradient(135deg, #614385 0%, #516395 100%);
+}
+
+.certification-pill.management {
+    background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);
+}
+
+.certification-pill.testing {
+    background: linear-gradient(135deg, #f46b45 0%, #eea849 100%);
+}
+
+/* Achievements */
+.achievement-list {
+    margin-top: 15px;
+    color: black;
+}
+
+.achievement-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: white;
+}
+
+.achievement-item i {
+    margin-right: 10px;
+    color: white;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .edu-exp-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .timeline::before {
+        display: none;
+    }
+}
     </style>
 </head>
 <body>
@@ -1106,7 +1660,7 @@
                 <h1>Hi, I'm <span>Dimuth C Bandara</span></h1>
                 <p>As an Academic Writer, Researcher, and IT Professional, I bring a unique blend of technical expertise, analytical thinking, and interdisciplinary knowledge to the field. I hold a First Class Honours BSc (Hons) in Computing from Coventry University, where my studies focused on software testing, project management, and cybersecurity law, equipping me with a strong foundation in IT and quality assurance. (I am also proud to be ranked among the first 15 at Test Automation University, reflecting my commitment to continuous learning and excellence in automation testing.)</p>
                 <div class="hero-btns">
-                    <a href="#portfolio" class="btn">View My Work</a>
+                    <a href="#portfolio" class="btn btn-primary">View My Work</a>
                     <a href="#contact" class="btn btn-secondary">Contact Me</a>
                 </div>
             </div>
@@ -1119,7 +1673,7 @@
             <h2 class="section-title reveal fade-bottom">About Me</h2>
             <div class="about-content">
                 <div class="about-img reveal fade-left">
-                    <img src="https://media.licdn.com/dms/image/v2/D5603AQEuOxgrclJZkA/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1694661964082?e=2147483647&v=beta&t=6LCR_iaHFgsn-UiyPmMgJnzz0AXb3rE8BV9oIxMBtUE" alt="Your Name">
+                    <img src="dimuth_new.jpeg" alt="Your Name">
                 </div>
                 <div class="about-text reveal fade-right">
                     <h3>Who am I?</h3>
@@ -1311,172 +1865,188 @@
     </section>
 
     <!-- Education & Experience Section -->
-<section class="section" id="education-experience">
-    <div class="container">
-        <h2 class="section-title reveal fade-bottom">Education & Experience</h2>
-        <div class="edu-exp-grid">
-            <!-- Education Column -->
-            <div class="edu-exp-column reveal fade-left">
-                <h2>Education</h2>
-                <br>
-                <div class="edu-exp-item">
-                    <h4>BSc (Hons) in Computing</h4>
-                    <p><strong>Coventry University</strong> – First Class Honours</p>
-                    <p>Focus: Software Testing, Project Management, Cybersecurity Law</p>
+    <section class="section" id="education-experience">
+        <div class="container">
+            <h2 class="section-title reveal fade-bottom"><span class="highlight">Education</span> & <span class="highlight">Experience</span></h2>
+            <div class="edu-exp-grid">
+                <!-- Education Column -->
+                <div class="edu-exp-column reveal fade-left">
+                    <div class="column-header">
+                        <i class="fas fa-graduation-cap icon"></i>
+                        <h2>Education</h2>
+                    </div>
+                    <div class="timeline">
+                        <div class="edu-exp-item card">
+                            <div class="card-header">
+                                <h4>Diploma in Professional HRM</h4>
+                                <span class="pill current">Current</span>
+                            </div>
+                            <p class="institution"><i class="fas fa-university"></i> Charted Institute of Personal Management - SL</p>
+                            <p class="focus"><i class="fas fa-bullseye"></i> Focus: HRM</p>
+                        </div>
+                        
+                        <div class="edu-exp-item card highlight-card">
+                            <div class="card-header">
+                                <h4>BSc (Hons) in Computing</h4>
+                                <span class="pill distinction">First Class Honours</span>
+                            </div>
+                            <p class="institution"><i class="fas fa-university"></i> Coventry University</p>
+                            <p class="focus"><i class="fas fa-bullseye"></i> Focus: Software Testing, Project Management, Cybersecurity Law</p>
+                        </div>
+                        
+                        <div class="edu-exp-item card">
+                            <div class="card-header">
+                                <h4>Higher National Diploma in Software Engineering</h4>
+                                <span class="pill distinction">Distinction</span>
+                            </div>
+                            <p class="institution"><i class="fas fa-university"></i> National Institute of Business Management (NIBM - Sri Lanka)</p>
+                            <p class="duration"><i class="far fa-calendar-alt"></i> 2021 - 2023</p>
+                        </div>
+                        
+                        <div class="edu-exp-item card">
+                            <div class="card-header">
+                                <h4>Advanced Certificate in Software Quality Assurance</h4>
+                            </div>
+                            <p class="institution"><i class="fas fa-university"></i> National Institute of Business Management (NIBM - Sri Lanka)</p>
+                            <p class="duration"><i class="far fa-calendar-alt"></i> 2021 - 2022</p>
+                        </div>
+                        
+                        <div class="edu-exp-item card">
+                            <div class="card-header">
+                                <h4>Diploma in Software Engineering</h4>
+                                <span class="pill gpa">GPA: 3.75</span>
+                            </div>
+                            <p class="institution"><i class="fas fa-university"></i> National Institute of Business Management (NIBM - Sri Lanka)</p>
+                            <p class="duration"><i class="far fa-calendar-alt"></i> 2018 - 2019</p>
+                        </div>
+                        
+                        <div class="edu-exp-item card">
+                            <div class="card-header">
+                                <h4>Diploma in Business Management</h4>
+                                <span class="pill distinction">Distinction</span>
+                            </div>
+                            <p class="institution"><i class="fas fa-university"></i> ESOFT Metro Campus</p>
+                        </div>
+                        
+                        <div class="edu-exp-item card">
+                            <div class="card-header">
+                                <h4>Diploma in Psychology and Counselling</h4>
+                                <span class="pill distinction">Distinction</span>
+                            </div>
+                            <p class="institution"><i class="fas fa-university"></i> ICBT Campus</p>
+                            <p class="duration"><i class="far fa-calendar-alt"></i> 2022 - 2023</p>
+                        </div>
+                        
+                        <div class="certifications-section">
+                            <h3 class="subsection-title"><i class="fas fa-certificate"></i> Certifications</h3>
+                            <div class="certification-grid">
+                                <span class="certification-pill law">IT and Cybersecurity Law</span>
+                                <span class="certification-pill distinction">HR Management</span>
+                                <span class="certification-pill distinction">Industrial Relations</span>
+                                <span class="certification-pill tech">CISSP</span>
+                                <span class="certification-pill law">Six Sigma</span>
+                                <span class="certification-pill law">Digital Forensics</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                
-                <div class="edu-exp-item">
-                    <h4>Higher National Diploma in Software Engineering</h4>
-                    <p><strong>National Institute of Business Management (NIBM - Sri Lanka)</strong> – Distinction</p>
-                    <p>Field: Information Technology | Years: 2021 - 2023</p>
+    
+                <!-- Experience Column -->
+                <div class="edu-exp-column reveal fade-right">
+                    <div class="column-header">
+                        <i class="fas fa-briefcase icon"></i>
+                        <h2>Experience</h2>
+                    </div>
+                    <div class="timeline">
+                        <div class="work-exp-item card">
+                            <div class="card-header">
+                                <h4>Freelance SDET | R&D | Content Writer</h4>
+                                <span class="pill current">Current</span>
+                            </div>
+                            <p class="company"><i class="fas fa-building"></i> Freelance | <i class="far fa-calendar-alt"></i> Aug 2021 – Present</p>
+                            <ul class="responsibilities">
+                                <li><i class="fas fa-check-circle"></i> Delivered test automation and manual testing solutions in Healthcare, E-Commerce, ERP, CRM, and HRM domains</li>
+                                <li><i class="fas fa-check-circle"></i> Worked with Playwright, Cypress, Selenium, Rest Assured, JMeter, Jenkins</li>
+                                <li><i class="fas fa-check-circle"></i> Conducted academic research on GDPR, labor law, and software quality</li>
+                                <li><i class="fas fa-check-circle"></i> Authored content on decision support systems for SAP and ODOO</li>
+                            </ul>
+                            <div class="tech-stack">
+                                <span class="tech-pill backend">Playwright</span>
+                                <span class="tech-pill backend">Cypress</span>
+                                <span class="tech-pill database">Selenium</span>
+                                <span class="tech-pill frontend">JMeter</span>
+                                <span class="tech-pill cloud">Snowflake</span>
+                            </div>
+                        </div>
+                        
+                        <div class="work-exp-item card highlight-card">
+                            <div class="card-header">
+                                <h4>Quality Engineering Intern</h4>
+                                <span class="pill internship">Internship</span>
+                            </div>
+                            <p class="company"><i class="fas fa-building"></i> Wiley | <i class="far fa-calendar-alt"></i> Feb 2024 – Feb 2025</p>
+                            <ul class="responsibilities">
+                                <li><i class="fas fa-check-circle"></i> Conducted performance testing using JMeter and Gatling</li>
+                                <li><i class="fas fa-check-circle"></i> Monitored applications using Dynatrace and AWS services</li>
+                                <li><i class="fas fa-check-circle"></i> Automated UI/API tests using Playwright</li>
+                                <li><i class="fas fa-check-circle"></i> Developed Flask-MySQL apps for QE metrics tracking</li>
+                                <li><i class="fas fa-check-circle"></i> Led AI-based CV analyzer project</li>
+                            </ul>
+                            <div class="tech-stack">
+                                <span class="tech-pill backend">Playwright</span>
+                                <span class="tech-pill cloud">AWS</span>
+                                <span class="tech-pill database">Snowflake</span>
+                                <span class="tech-pill backend">Flask</span>
+                                <span class="tech-pill frontend">SpaCy</span>
+                            </div>
+                        </div>
+                        
+                        <div class="work-exp-item card">
+                            <div class="card-header">
+                                <h4>Mobile Application Developer Intern</h4>
+                                <span class="pill internship">Internship</span>
+                            </div>
+                            <p class="company"><i class="fas fa-building"></i> Avenra Technologies | <i class="far fa-calendar-alt"></i> Jan 2021 – Jul 2021</p>
+                            <ul class="responsibilities">
+                                <li><i class="fas fa-check-circle"></i> Contributed to Taxi App and CMS projects using Flutter</li>
+                                <li><i class="fas fa-check-circle"></i> Performed manual and automated testing with Appium</li>
+                                <li><i class="fas fa-check-circle"></i> Developed C# desktop application with Google Analytics</li>
+                            </ul>
+                            <div class="tech-stack">
+                                <span class="tech-pill frontend ">Flutter</span>
+                                <span class="tech-pill cloud">Firebase</span>
+                                <span class="tech-pill frontend">C#</span>
+                                <span class="tech-pill backend">Appium</span>
+                            </div>
+                        </div>
+                        
+                        <div class="certifications-section">
+                            <h3 class="subsection-title"><i class="fas fa-award"></i> Notable Achievements</h3>
+                            <div class="achievement-list">
+                                <div class="achievement-item">
+                                    <i class="fas fa-trophy"></i>
+                                    <span>Top 15 at Test Automation University</span>
+                                </div>
+                                <div class="achievement-item">
+                                    <i class="fas fa-star"></i>
+                                    <span>Batch Top in Industrial Relations and Labour Laws</span>
+                                </div>
+                                <div class="achievement-item">
+                                    <i class="fas fa-certificate"></i>
+                                    <span>Multiple Distinction certifications in HR and IT fields</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                
-                <div class="edu-exp-item">
-                    <h4>Advanced Certificate in Software Quality Assurance and Engineering for Professionals</h4>
-                    <p><strong>National Institute of Business Management (NIBM - Sri Lanka)</strong></p>
-                    <p>Field: Information Technology | Years: 2021 - 2022</p>
-                </div>
-                
-                <div class="edu-exp-item">
-                    <h4>Diploma in Software Engineering</h4>
-                    <p><strong>National Institute of Business Management (NIBM - Sri Lanka)</strong></p>
-                    <p>Field: Information Technology | GPA: 3.75 | Years: 2018 - 2019</p>
-                </div>
-                
-                <div class="edu-exp-item">
-                    <h4>Diploma in Business Management</h4>
-                    <p><strong>ESOFT Metro Campus</strong> – Distinction</p>
-                    <p>Field: Business Administration and Management, General</p>
-                </div>
-                
-                <div class="edu-exp-item">
-                    <h4>Diploma in Psychology and Counselling</h4>
-                    <p><strong>ICBT Campus</strong> – Distinction</p>
-                    <p>Field: Humanities / Humanistic Studies | Years: 2022 - 2023</p>
-                </div>
-                
-                <div class="edu-exp-item">
-                    <h4>Certificate in IT and Cybersecurity Law</h4>
-                    <p><strong>National Institute of Business Management (NIBM - Sri Lanka)</strong></p>
-                    <p>Field: Law, Information Technology</p>
-                </div>
-                
-                <div class="edu-exp-item">
-                    <h4>Certificate in Human Resource Management</h4>
-                    <p><strong>National Institute of Business Management (NIBM - Sri Lanka)</strong> – Distinction</p>
-                    <p>Field: Human Resources Management and Services | Year: 2022</p>
-                </div>
-                
-                <div class="edu-exp-item">
-                    <h4>Certificate in Industrial Relations and Labour Laws</h4>
-                    <p><strong>National Institute of Business Management (NIBM - Sri Lanka)</strong> – Distinction</p>
-                    <p>Field: HR/Personnel Administration | Year: 2023</p>
-                    <p>Finished as the batch top with a distinction pass</p>
-                </div>
-                
-                <div class="edu-exp-item">
-                    <h4>High School Education – A/L Biology Stream</h4>
-                    <p><strong>Maliyadeva College</strong></p>
-                    <p>Field: Biology / Biological Sciences, General</p>
-                </div>
-                
-                <div class="edu-exp-item">
-                    <h4>Certifications & Additional Studies</h4>
-                    <ul>
-                        <li>Top 15 at Test Automation University</li>
-                        <li>Business, Psychology, and Humanistic Studies</li>
-                        <li>Ongoing courses in Cloud, Automation & Data Engineering</li>
-                    </ul>
-                </div>
-
-                
-
-
-            </div>
-
-            <!-- Experience Column -->
-            <div class="edu-exp-column reveal fade-right">
-                <h2>Experience</h2>
-                <br>
-                <div class="work-exp-item">
-                    <h4>Freelance SDET | R&D | Content Writer</h4>
-                    <p><strong>Freelance</strong> | Aug 2021 – Present | Sri Lanka</p>
-                    <ul>
-                        <li>Delivered test automation and manual testing solutions in Healthcare, E-Commerce, ERP, CRM, and HRM domains.</li>
-                        <li>Worked with Playwright, Cypress, Selenium, Rest Assured, JMeter, Jenkins, Snowflake, Airflow, and DBT.</li>
-                        <li>Conducted academic research on GDPR, labor law, and software quality in IT.</li>
-                        <li>Experienced in Ranorex, Appium, LoadRunner, and Katalon Studio.</li>
-                        <li>Applied Six Sigma and CISSP principles in ethical, scalable software engineering.</li>
-                        <li>Authored and published content on decision support systems and experimental management for platforms such as SAP and ODOO.</li>
-                    </ul>
-                </div>
-                <br>
-
-                
-                <div class="work-exp-item">
-                    <h4>Quality Engineering Intern</h4>
-                    <p><strong>Wiley</strong> | Feb 2024 – Feb 2025 | Sri Lanka</p>
-                    <ul>
-                        <li>Conducted performance testing using JMeter and Gatling, integrated with Jenkins and GitHub Actions.</li>
-                        <li>Monitored applications using Dynatrace and AWS services.</li>
-                        <li>Automated UI/API tests using Playwright; optimized Airflow DAGs and SQL queries in Snowflake and dbt.</li>
-                        <li>Developed and tested internal Flask-MySQL apps for QE metrics tracking.</li>
-                        <li>Enhanced Power BI dashboards via SharePoint and custom APIs.</li>
-                        <li>Managed AWS S3 data staging and validated Snowflake data pipelines.</li>
-                        <li>Ensured data quality with OpenMetadata and led development of an AI-based CV analyzer using MongoDB, SpaCy, and Streamlit.</li>
-                    </ul>
-                </div>
-
-                <br>
-
-                <div class="work-exp-item">
-                    <h4>Mobile Application Developer Intern</h4>
-                    <p><strong>Avenra Technologies</strong> | Jan 2021 – Jul 2021 (7 months) | Kurunegala</p>
-                    <ul>
-                        <li>Contributed to development of a Taxi App and CMS projects using Flutter and Firebase.</li>
-                        <li>Used Jira for project management and task tracking.</li>
-                        <li>Performed manual and automated testing with Appium for mobile applications.</li>
-                        <li>Executed Unit, Widget, and Integration testing using Flutter’s built-in testing libraries.</li>
-                        <li>Developed a C# desktop application with Google Analytics integration for monitoring.</li>
-                        <li>Automated API testing with Rest Assured and Postman.</li>
-                        <li>Created detailed technical documentation aligned with client guidelines.</li>
-                    </ul>
-                </div>
-
-                <br>
-
-                <div class="edu-exp-item">
-                    <h2>Licenses & Certifications</h2>
-                    <br>
-                    <ul>
-                        <li>Top 15 at Test Automation University</li>
-                        <li>Business, Psychology, and Humanistic Studies</li>
-                        <li>Ongoing courses in Cloud, Automation & Data Engineering</li>
-                        <li>Diploma in Certified Information Systems Security Professional (CISSP 2019)</li>
-                        <li>Advanced Diploma in Intellectual Property Rights and Competition Law</li>
-<li>Diploma in Digital Forensic Investigation</li>
-<li>Diploma in Risk Management</li>
-<li>Diploma in Six Sigma</li>
-<li>Diploma in Human Resources (HR)</li>
-<li>Diploma in Legal Studies</li>
-<li>Diploma in Project Management</li>
-<li>Diploma in Software Project Management</li>
-<li>Diploma in Software Testing</li>
-
-                    </ul>
-                </div>
-                
-                
-                
-                
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
 <section class="section portfolio" id="medium-articles">
     <div class="container">
         <h2 class="section-title reveal fade-bottom">Medium Articles</h2>
+        
         <div class="portfolio-grid">
 
             <!-- Medium Article 1 -->
@@ -1485,12 +2055,12 @@
                     <img src="CRM.png" alt="Medium Article 1">
                     <div class="portfolio-overlay">
                         <h3>Importance of CRM Knowledge for SQA Engineers: Early Adoption, Growth, Challenges, and Benefits</h3>
-                        <a href="https://medium.com/@dimuthcbandara97/importance-of-crm-knowledge-for-sqa-engineers-early-adoption-growth-challenges-and-benefits-e47fc76b749b" class="btn" target="_blank">Read on Medium</a>
+                        <a href="https://medium.com/@dimuthcbandara97/importance-of-crm-knowledge-for-sqa-engineers-early-adoption-growth-challenges-and-benefits-e47fc76b749b" class="btn btn-secondary" target="_blank">Read on Medium</a>
                     </div>
                 </div>
                 <div class="portfolio-info">
                     <h3>Importance of CRM Knowledge for SQA Engineers: Early Adoption, Growth, Challenges, and Benefits</h3>
-                    <p>Learn how to build scalable E2E test frameworks using Playwright with real-world CI/CD integrations and Allure reporting.</p>
+                    <p>CRM systems have evolved from basic contact management to integrated platforms, enhancing customer interactions and business operations. Technological advancements like cloud computing and big data have driven their growth. SQA engineers ensure CRM reliability, addressing challenges like data quality and user adoption, while supporting customer-centric business strategies </p>
                 </div>
             </div>
 
@@ -1500,7 +2070,7 @@
                     <img src="to.png" >
                     <div class="portfolio-overlay">
                         <h3>Strategies Against Toxic HR in Sri Lankan Tech Startups: Legal and Ethical Warfare</h3>
-                        <a href="https://medium.com/@dimuthcbandara97/strategies-against-toxic-hr-in-sri-lankan-tech-startups-legal-and-ethical-warfare-373f89509d08" class="btn" target="_blank">Read on Medium</a>
+                        <a href="https://medium.com/@dimuthcbandara97/strategies-against-toxic-hr-in-sri-lankan-tech-startups-legal-and-ethical-warfare-373f89509d08" class="btn btn-secondary" target="_blank">Read on Medium</a>
                     </div>
                 </div>
                 <div class="portfolio-info">
@@ -1516,12 +2086,12 @@
                     <img src="fall.png" alt="Medium Article 3">
                     <div class="portfolio-overlay">
                         <h3>Transitioning from Fall to Growth: A Self-Directed Learning and Development Strategy</h3>
-                        <a href="https://medium.com/@dimuthcbandara97/transitioning-from-fall-to-growth-a-self-directed-learning-and-development-strategy-953708d7b367" class="btn" target="_blank">Read on Medium</a>
+                        <a href="https://medium.com/@dimuthcbandara97/transitioning-from-fall-to-growth-a-self-directed-learning-and-development-strategy-953708d7b367" class="btn btn-secondary" target="_blank">Read on Medium</a>
                     </div>
                 </div>
                 <div class="portfolio-info">
                     <h3>Transitioning from Fall to Growth: A Self-Directed Learning and Development Strategy</h3>
-                    <p>This article introduces key features of Postman, how to create collections, write scripts, and generate test reports effectively.</p>
+                    <p>Transition from stagnation to growth by adopting a self-directed learning strategy. Set clear goals, leverage online resources, and cultivate curiosity. Embrace failures as learning opportunities, track progress, and adjust methods as needed. Prioritize consistency, seek feedback, and build a supportive network. This proactive approach fosters continuous development and personal/professional growth.</p>
                 </div>
             </div>
 
@@ -1531,12 +2101,12 @@
                     <img src="material.png" alt="Medium Article 1">
                     <div class="portfolio-overlay">
                         <h3>SAP MM and Logistics Knowledge for Software Quality Engineers</h3>
-                        <a href="https://medium.com/@dimuthcbandara97/sap-mm-and-logistics-knowledge-for-software-quality-engineers-411facf0352e" class="btn" target="_blank">Read on Medium</a>
+                        <a href="https://medium.com/@dimuthcbandara97/sap-mm-and-logistics-knowledge-for-software-quality-engineers-411facf0352e" class="btn btn-secondary" target="_blank">Read on Medium</a>
                     </div>
                 </div>
                 <div class="portfolio-info">
                     <h3>SAP MM and Logistics Knowledge for Software Quality Engineers</h3>
-                    <p>Learn how to build scalable E2E test frameworks using Playwright with real-world CI/CD integrations and Allure reporting.</p>
+                    <p>Software Quality Engineers (SQEs) ensure SAP MM and Logistics systems meet business needs by validating robustness, integration, and performance. They require supply chain and SAP expertise to optimize processes, enhance competitiveness, and support sustainability. SQA involves early fault detection, compliance with standards, and process controls to improve reliability, safety, and cost efficiency in software development. </p>
                 </div>
             </div>
 
@@ -1546,12 +2116,12 @@
                     <img src="zero.png" alt="Medium Article 2">
                     <div class="portfolio-overlay">
                         <h3>Autonomous Quality Assurance in Continuous Deployment Pipelines</h3>
-                        <a href="https://medium.com/@yourusername/ci-cd-for-qa-engineers" class="btn" target="_blank">Read on Medium</a>
+                        <a href="https://medium.com/@yourusername/ci-cd-for-qa-engineers" class="btn btn-secondary" target="_blank">Read on Medium</a>
                     </div>
                 </div>
                 <div class="portfolio-info">
                     <h3>Autonomous Quality Assurance in Continuous Deployment Pipelines</h3>
-                    <p>A deep dive into integrating GitHub Actions with your QA process — including automated testing, notifications, and best practices.</p>
+                    <p>Modern cloud-native apps, with microservices and AI, demand advanced QA beyond traditional methods. Autonomous QA bots enable real-time monitoring, detecting regressions and anomalies in dynamic environments. By leveraging AI-driven validation, they enhance accuracy, scalability, and reliability, ensuring high performance and minimizing downtime in complex, continuously evolving systems.</p>
                 </div>
             </div>
 
@@ -1561,66 +2131,68 @@
                     <img src="cx.png" alt="Medium Article 3">
                     <div class="portfolio-overlay">
                         <h3>CX-Oriented QA Framework for B2B/B2C Applications: Integrating Metrics with Test Coverage</h3>
-                        <a href="https://medium.com/@yourusername/introduction-to-postman-api-testing" class="btn" target="_blank">Read on Medium</a>
+                        <a href="https://medium.com/@yourusername/introduction-to-postman-api-testing" class="btn btn-secondary" target="_blank">Read on Medium</a>
                     </div>
                 </div>
                 <div class="portfolio-info">
                     <h3>CX-Oriented QA Framework for B2B/B2C Applications: Integrating Metrics with Test Coverage</h3>
-                    <p>This article introduces key features of Postman, how to create collections, write scripts, and generate test reports effectively.</p>
+                    <p>Modern QA must prioritize customer experience alongside functionality. Traditional defect-focused approaches risk poor user satisfaction and brand damage. This paper presents a CX-driven QA framework linking Net Promoter Score, churn data, and defect analysis to create feedback loops that shape testing strategies—preventing dissatisfaction through proactive, user-centric quality assurance.</p>
                 </div>
             </div>
 
              <!-- Medium Article 1 -->
             <div class="portfolio-item">
                 <div class="portfolio-img">
-                    <img src="medium1.png" alt="Medium Article 1">
+                    <img src="QAaas.png" alt="Medium Article 1">
                     <div class="portfolio-overlay">
-                        <h3>Optimizing End-to-End Tests with Playwright</h3>
-                        <a href="https://medium.com/@yourusername/optimizing-e2e-tests-with-playwright" class="btn" target="_blank">Read on Medium</a>
+                        <h3>Service-Oriented Quality Assurance as a Service (QAaaS) Delivery Model</h3>
+                        <a href="https://medium.com/@yourusername/optimizing-e2e-tests-with-playwright" class="btn btn-secondary" target="_blank">Read on Medium</a>
                     </div>
                 </div>
                 <div class="portfolio-info">
-                    <h3>Optimizing End-to-End Tests with Playwright</h3>
-                    <p>Learn how to build scalable E2E test frameworks using Playwright with real-world CI/CD integrations and Allure reporting.</p>
+                    <h3>Service-Oriented Quality Assurance as a Service (QAaaS) Delivery Model</h3>
+                    <p>Quality Assurance as a Service (QAaaS) transforms traditional QA into a flexible, service-oriented model with defined SLAs and measurable outcomes. It enables cost reduction, access to specialized expertise, and efficient testing processes. Successful implementation requires clear service design, performance metrics, and strategic outsourcing to align with business goals while minimizing risks.</p>
                 </div>
             </div>
 
             <!-- Medium Article 2 -->
             <div class="portfolio-item">
                 <div class="portfolio-img">
-                    <img src="medium2.png" alt="Medium Article 2">
+                    <img src="ethical.png" alt="Medium Article 2">
                     <div class="portfolio-overlay">
-                        <h3>CI/CD for QA Engineers</h3>
-                        <a href="https://medium.com/@yourusername/ci-cd-for-qa-engineers" class="btn" target="_blank">Read on Medium</a>
+                        <h3>Ethical Hacking Fundamentals for Software Quality Engineers</h3>
+                        <a href="https://medium.com/@yourusername/ci-cd-for-qa-engineers" class="btn btn-secondary" target="_blank">Read on Medium</a>
                     </div>
                 </div>
                 <div class="portfolio-info">
-                    <h3>CI/CD for QA Engineers</h3>
-                    <p>A deep dive into integrating GitHub Actions with your QA process — including automated testing, notifications, and best practices.</p>
+                    <h3>Ethical Hacking Fundamentals for Software Quality Engineers</h3>
+                    <p>Ethical hacking is vital for software quality engineers to proactively identify vulnerabilities and strengthen system security. By simulating attacks, they anticipate threats, integrate robust defenses early, and reduce remediation costs. Mastery of security tools, networking, and threat assessment ensures resilient systems, safeguarding sensitive data against evolving cyber risks.</p>
                 </div>
             </div>
 
             <!-- Medium Article 3 -->
             <div class="portfolio-item">
                 <div class="portfolio-img">
-                    <img src="medium3.png" alt="Medium Article 3">
+                    <img src="HIPAA.png" alt="Medium Article 3">
                     <div class="portfolio-overlay">
-                        <h3>Introduction to Postman for API Testing</h3>
-                        <a href="https://medium.com/@yourusername/introduction-to-postman-api-testing" class="btn" target="_blank">Read on Medium</a>
+                        <h3>AI-Driven Regulatory Compliance Verification in Healthcare Software Quality Engineering</h3>
+                        <a href="https://medium.com/@yourusername/introduction-to-postman-api-testing" class="btn btn-secondary" target="_blank">Read on Medium</a>
                     </div>
                 </div>
                 <div class="portfolio-info">
-                    <h3>Introduction to Postman for API Testing</h3>
-                    <p>This article introduces key features of Postman, how to create collections, write scripts, and generate test reports effectively.</p>
+                    <h3>AI-Driven Regulatory Compliance Verification in Healthcare Software Quality Engineering</h3>
+                    <p>Healthcare software must comply with strict regulations (HIPAA, GDPR, etc.), but manual verification struggles with evolving standards. AI-driven quality engineering enables proactive compliance by automating regulatory mapping, real-time monitoring, and early violation detection. This reduces manual effort while ensuring continuous adherence to patient safety and data security requirements.</p>
                 </div>
             </div>
+
+            <a href="https://medium.com/@dimuthcbandara97" class="btn btn-primary" target="_blank">View All Articles</a>
 
         </div>
     </div>
 </section>
 
   <!-- Contact Section -->
-  <section class="section" id="contact">
+  <section class="section" id="">
     <div class="container">
         <h2 class="section-title reveal fade-bottom">Tools And Technologies</h2>
         <div class="social-contact">
