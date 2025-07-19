@@ -1,0 +1,27 @@
+/* Cosmic Cyberpunk Palette */
+:root {
+    --neon-pink: #ff00ff;
+    --cyber-blue: #00f5ff;
+    --matrix-green: #00ff41;
+    --electric-purple: #8a2be2;
+    --hacker-yellow: #fff700;
+    --dark-matter: #0f0f1a;
+    --starry-night: #1a1a2e;
+    --cyber-black: #050510;
+    --neon-orange: #ff9e00;
+    
+    --gradient-primary: linear-gradient(135deg, var(--electric-purple), var(--cyber-blue));
+    --gradient-secondary: linear-gradient(135deg, var(--neon-pink), var(--hacker-yellow));
+    --gradient-accent: linear-gradient(135deg, var(--matrix-green), var(--cyber-blue));
+    --gradient-text: linear-gradient(90deg, var(--neon-pink), var(--neon-orange), var(--hacker-yellow));
+    
+    --glow-primary: 0 0 10px var(--electric-purple), 0 0 20px var(--cyber-blue);
+    --glow-secondary: 0 0 10px var(--neon-pink), 0 0 20px var(--hacker-yellow);
+    --glow-text: 0 0 5px #fff, 0 0 10px var(--neon-pink), 0 0 15px var(--electric-purple);
+    
+    --transition-smooth: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    --transition-bounce: all 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    --transition-quick: all 0.3s ease-out;
+}
+
+/* ... (rest of the CSS from index.html) ... */ 
