@@ -3,9 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dimuth C Bandara</title>
+    <title>Dimuth C Bandara | Software Quality Engineer | SDET | Data Engineer | Research and Development | Portfolio</title>
+    <meta name="description" content="Dimuth C Bandara - Software Quality Engineer, SDET, Data Engineer, Research and Development, Academic Writer, and IT Professional. Explore my portfolio, skills, projects, and articles in software testing, QA automation, data engineering, and R&D.">
+    <meta name="keywords" content="Dimuth Bandara, Software Quality Engineer, SDET, Data Engineer, Research and Development, QA, Portfolio, Test Automation, Software Testing, Automation, Data Engineering, Research, Academic Writer, IT, Cybersecurity, Flutter, Playwright, Selenium, JMeter, Jenkins, SQL, Python, Java, React, Node.js, Snowflake, HRM, GDPR, Sri Lanka, Coventry University, Quality Assurance, Test Engineer, Test Automation Engineer, Quality Engineering, R&D, Researcher, Research Engineer, Data Science, Data Analytics">
+    <meta name="author" content="Dimuth C Bandara">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://dimuthchathu101.github.io/DimuthPortfolio/">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <!-- Open Graph -->
+    <meta property="og:title" content="Dimuth C Bandara | Software Quality Engineer | SDET | Data Engineer | Research and Development | Portfolio">
+    <meta property="og:description" content="Software Quality Engineer, SDET, Data Engineer, Research and Development, Academic Writer, and IT Professional. Explore my portfolio, skills, and articles.">
+    <meta property="og:image" content="https://dimuthchathu101.github.io/DimuthPortfolio/images/dimuth_new.jpeg">
+    <meta property="og:url" content="https://dimuthchathu101.github.io/DimuthPortfolio/">
+    <meta property="og:type" content="website">
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Dimuth C Bandara | Software Quality Engineer | SDET | Data Engineer | Research and Development | Portfolio">
+    <meta name="twitter:description" content="Software Quality Engineer, SDET, Data Engineer, Research and Development, Academic Writer, and IT Professional. Explore my portfolio, skills, and articles.">
+    <meta name="twitter:image" content="https://dimuthchathu101.github.io/DimuthPortfolio/images/dimuth_new.jpeg">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Dimuth C Bandara",
+      "jobTitle": ["Software Quality Engineer", "SDET", "Data Engineer", "Research and Development", "Academic Writer", "IT Professional"],
+      "url": "https://dimuthchathu101.github.io/DimuthPortfolio/",
+      "image": "https://dimuthchathu101.github.io/DimuthPortfolio/images/dimuth_new.jpeg",
+      "sameAs": [
+        "https://lk.linkedin.com/in/dimuth-c-bandara-510015266",
+        "https://medium.com/@dimuthcbandara97"
+      ],
+      "alumniOf": {
+        "@type": "CollegeOrUniversity",
+        "name": "Coventry University"
+      },
+      "description": "Dimuth C Bandara is a Software Quality Engineer (SDET), Data Engineer, Research and Development specialist, Academic Writer, and IT Professional specializing in QA automation, software testing, data engineering, and R&D."
+    }
+    </script>
 
     <style>
         /* Cosmic Cyberpunk Palette */
@@ -42,12 +78,14 @@
         }
 
         html {
+            font-size: 16px; /* Base size for rem units */
             scroll-behavior: smooth;
             scroll-padding-top: 100px;
         }
 
         body {
-            font-family: 'Rajdhani', 'Orbitron', sans-serif;
+            font-family: 'Rajdhani', 'Orbitron', Arial, sans-serif;
+            font-size: 1.1rem; /* Slightly larger base font */
             background-color: var(--dark-matter);
             color: white;
             overflow-x: hidden;
@@ -69,16 +107,35 @@
             text-shadow: var(--glow-text);
         }
 
-        p {
-            font-family: 'Rajdhani', sans-serif;
-            font-weight: 400;
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 1.5rem;
+            line-height: 1.1;
+        }
+
+        h2 {
+            font-size: 2.25rem;
+            margin-bottom: 1.2rem;
+        }
+
+        h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        h4 {
+            font-size: 1.2rem;
+            margin-bottom: 0.8rem;
+        }
+
+        p, li {
+            font-size: 1.1rem;
+            line-height: 1.7;
         }
 
         .section-title {
-            font-size: 3.5rem;
-            margin-bottom: 3rem;
-            position: relative;
-            display: inline-block;
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
             letter-spacing: 2px;
         }
 
@@ -968,13 +1025,9 @@
 
         /* Cyberpunk Responsive Design */
         @media (max-width: 1200px) {
-            .section-title {
-                font-size: 3rem;
-            }
-            
-            .hero h1 {
-                font-size: 4rem;
-            }
+            .section-title { font-size: 2.2rem; }
+            h1 { font-size: 2.5rem; }
+            h2 { font-size: 1.8rem; }
         }
 
         @media (max-width: 992px) {
@@ -1017,6 +1070,12 @@
         }
 
         @media (max-width: 768px) {
+            html { font-size: 15px; }
+            .section-title { font-size: 1.5rem; }
+            h1 { font-size: 2rem; }
+            h2 { font-size: 1.3rem; }
+            h3 { font-size: 1.1rem; }
+            
             .container {
                 padding: 0 1.5rem;
             }
@@ -1044,23 +1103,15 @@
                 margin-bottom: 1rem;
             }
             
-            .section-title {
-                font-size: 2.5rem;
-            }
-            
             .social-links-large {
                 grid-template-columns: repeat(2, 1fr);
             }
         }
 
         @media (max-width: 576px) {
-            .hero h1 {
-                font-size: 2.5rem;
-            }
-            
-            .section-title {
-                font-size: 2rem;
-            }
+            html { font-size: 14px; }
+            .section-title { font-size: 1.2rem; }
+            h1 { font-size: 1.5rem; }
             
             .portfolio-grid {
                 grid-template-columns: 1fr;
@@ -1629,6 +1680,13 @@
         display: none;
     }
 }
+
+        /* Reduce gap between What I Do and My Work sections */
+        #what-i-do {
+        }
+        #portfolio {
+            padding-top: 2rem !important;
+        }
     </style>
 </head>
 <body>
@@ -1658,7 +1716,8 @@
         </div>
         <div class="container">
             <div class="hero-content">
-                <h1>Hi, I'm <span>Dimuth C Bandara</span></h1>
+                <h1>Hi, I'm <span>Dimuth C Bandara</span> — <span>Software Quality Engineer (SDET), Data Engineer & Research and Development</span></h1>
+                <p class="hero-tagline">Software Quality Engineer (SDET) | Data Engineer | Research & Development | QA Automation Specialist | Test Automation Engineer</p>
                 <p>As an Academic Writer, Researcher, and IT Professional, I bring a unique blend of technical expertise, analytical thinking, and interdisciplinary knowledge to the field. I hold a First Class Honours BSc (Hons) in Computing from Coventry University, where my studies focused on software testing, project management, and cybersecurity law, equipping me with a strong foundation in IT and quality assurance. (I am also proud to be ranked among the first 15 at Test Automation University, reflecting my commitment to continuous learning and excellence in automation testing.)</p>
                 <div class="hero-btns">
                     <a href="#portfolio" class="btn btn-primary">View My Work</a>
@@ -1671,14 +1730,14 @@
     <!-- About Section -->
     <section class="section" id="about">
         <div class="container">
-            <h2 class="section-title reveal fade-bottom">About Me</h2>
+            <h2 class="section-title reveal fade-bottom">About Me – Software Quality Engineer, Data Engineer, R&D</h2>
             <div class="about-content">
                 <div class="about-img reveal fade-left">
-                    <img src="dimuth_new.jpeg" alt="Your Name">
+                    <img src="images/dimuth_new.jpeg" alt="Dimuth C Bandara - Software Quality Engineer (SDET), Data Engineer, Research and Development portrait" loading="lazy">
                 </div>
                 <div class="about-text reveal fade-right">
                     <h3>Who am I?</h3>
-                    <p>I am a multidisciplinary professional with a First Class Honours BSc in Computing from Coventry University and a top-15 ranking at Test Automation University. My background blends technical expertise with academic rigor, covering software development and testing, cybersecurity law, and project management. I have completed additional programs in business, psychology, and humanistic studies, enabling a strategic and holistic problem-solving approach.</p>
+                    <p>I am a multidisciplinary professional: <strong>Software Quality Engineer (SDET)</strong>, <strong>Data Engineer</strong>, and <strong>Research and Development</strong> specialist with a First Class Honours BSc in Computing from Coventry University and a top-15 ranking at Test Automation University. My background blends technical expertise with academic rigor, covering software development and testing, data engineering, R&D, cybersecurity law, and project management. I have completed additional programs in business, psychology, and humanistic studies, enabling a strategic and holistic problem-solving approach.</p>
                     <p>My research explores IT management, data privacy (GDPR), and domain-specific quality engineering across industries like healthcare, e-commerce, and data engineering. I've published articles and authored technical documentation that reflect my ability to communicate complex ideas clearly.</p>
                     <p>Professionally, I've contributed to mobile and desktop app development and testing using Flutter, Firebase, C#, Power BI, and Google Analytics. My QA expertise includes automation and performance testing (Gatling, JMeter, Playwright, Rest Assured, Postman) integrated into CI/CD pipelines with Jenkins and GitHub Actions. I've also worked on data engineering projects involving SQL tuning, Airflow DAGs, and Snowflake optimization.</p>
                     <p><b>Driven by curiosity, collaboration, and innovation, I aim to make a meaningful impact through research, technology, and continuous learning.</b></p>
@@ -1721,10 +1780,34 @@
                                 <div class="skill-progress" style="width: 80%;"></div>
                             </div>
                         </div>
+                        <div class="skill-item">
+                            <div class="skill-name">
+                                <span>Research and Development (R&D)</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%;"></div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+    </section>
+
+    <section class="section" id="what-i-do">
+      <div class="container">
+        <h2 class="section-title reveal fade-bottom">What I Do</h2>
+        <ul class="what-i-do-list">
+          <li><b>Software Quality Engineering (SDET):</b> Designing and executing robust test automation frameworks for web, mobile, and enterprise applications.</li>
+          <li><b>Data Engineering for QA:</b> Building and optimizing data pipelines, ETL processes, and analytics for quality assurance and test data management.</li>
+          <li><b>Research & Development (R&D):</b> Innovating in software testing, QA methodologies, and regulatory compliance through research-driven solutions.</li>
+          <li><b>QA Automation Specialist:</b> Integrating CI/CD, test automation, and performance testing tools (Playwright, Selenium, JMeter, Jenkins, etc.).</li>
+          <li><b>Test Automation Engineer:</b> Developing and maintaining automated test suites for functional, regression, and performance testing.</li>
+          <li><b>Research Engineer:</b> Publishing articles, conducting academic research, and authoring technical documentation in QA and data engineering.</li>
+          <li><b>Data-driven QA:</b> Leveraging data analytics, machine learning, and AI for smarter, more effective quality assurance.</li>
+        </ul>
+      </div>
     </section>
 
     <!-- Portfolio Section -->
@@ -1735,7 +1818,7 @@
                 <!-- Portfolio Item 1 -->
                 <div class="portfolio-item">
                     <div class="portfolio-img">
-                        <img src="EnterpriseERP.png" alt="Project 1">
+                        <img src="images/EnterpriseERP.png" alt="ERP TestMaster Software Quality Engineering Project Screenshot" loading="lazy">
                         <div class="portfolio-overlay">
                             <h3>ERP TestMaster</h3>
                             <a href="#" class="btn">View Details</a>
@@ -1750,6 +1833,7 @@
                         <p>Automation Framework: Playwright</p>
                         <p>Continuous Integration/Continuous Deployment (CI/CD): Integrated with GitHub Actions</p>
                         <p>Test Reporting and Logging: Implemented using Allure Reporting</p>
+                        <p><b>R&D Focus:</b> Leveraged research and development best practices for test automation and framework design.</p>
                         
 
                     </div>
@@ -1758,7 +1842,7 @@
                 <!-- Portfolio Item 2 -->
                 <div class="portfolio-item">
                     <div class="portfolio-img">
-                        <img src="Blazer.png" alt="Project 2">
+                        <img src="images/Blazer.png" alt="Blazer Rental Management System SDET Project Screenshot" loading="lazy">
                         <div class="portfolio-overlay">
                             <h3>Blazer Rental Management System - E2E Testing</h3>
                             <a href="#" class="btn">View Details</a>
@@ -1782,7 +1866,7 @@
                 <!-- Portfolio Item 3 -->
                 <div class="portfolio-item">
                     <div class="portfolio-img">
-                        <img src="Delivery.png" alt="Project 3">
+                        <img src="images/Delivery.png" alt="Delivery Driver Tracking System QA Automation Screenshot" loading="lazy">
                         <div class="portfolio-overlay">
                             <h3>Delivery Driver Tracking System</h3>
                             <a href="#" class="btn">View Details</a>
@@ -1804,6 +1888,7 @@
                         
                         <p><b>Static Code Analysis:</b></p>
                         <p>Maintained code quality using SonarLint, SonarQube, and ESLint, proactively identifying issues and enforcing coding standards.</p>
+                        <p><b>Data Engineering & R&D:</b> Implemented backend data engineering for RESTful services and applied R&D-driven test case development for robust validation.</p>
                         
                         
                     </div>
@@ -1811,7 +1896,7 @@
 
                 <div class="portfolio-item">
                     <div class="portfolio-img">
-                        <img src="Fitness.png" alt="Fitness App">
+                        <img src="images/Fitness.png" alt="Fitness Application iOS SDET Project Screenshot" loading="lazy">
                         <div class="portfolio-overlay">
                             <h3>Fitness Application Using Swift and UIKit</h3>
                             <a href="#" class="btn">View Details</a>
@@ -1828,7 +1913,7 @@
                 
                 <div class="portfolio-item">
                     <div class="portfolio-img">
-                        <img src="Sleepwaling.png" alt="Sleepwalking Prevention App">
+                        <img src="images/Sleepwaling.png" alt="Sleepwalking Prevention Android App Quality Engineering Screenshot" loading="lazy">
                         <div class="portfolio-overlay">
                             <h3>Sleepwalking Prevention Application</h3>
                             <a href="#" class="btn">View Details</a>
@@ -1845,7 +1930,7 @@
 
                 <div class="portfolio-item">
                     <div class="portfolio-img">
-                        <img src="Talent.png" alt="Talent Connector">
+                        <img src="images/Talent.png" alt="Talent Connector AI Job Matching SDET Project Screenshot" loading="lazy">
                         <div class="portfolio-overlay">
                             <h3>Talent Connector Application</h3>
                             <a href="#" class="btn">View Details</a>
@@ -1857,6 +1942,7 @@
                         <p><b>Resume Parsing:</b> Used <strong>SpaCy</strong> with transformer models and tools like <strong>Prodigy</strong> and <strong>Volcano</strong> to extract entities from resumes (PDFs converted via <strong>PrimePDF</strong>).</p>
                         <p><b>Web Development:</b> Built a full-stack app with <strong>Flask</strong>, <strong>HTML/CSS/JS</strong>, and integrated <strong>Google OAuth</strong> for authentication.</p>
                         <p><b>Data Management:</b> Organized structured collections for users, resumes, and job posts, enabling efficient AI-driven job search and recommendation.</p>
+                        <p><b>Data Engineering & R&D:</b> This project demonstrates advanced data engineering and research and development skills, including AI-driven resume parsing and structured data management.</p>
                     </div>
                 </div>
                 
@@ -2053,7 +2139,7 @@
             <!-- Medium Article 1 -->
             <div class="portfolio-item">
                 <div class="portfolio-img">
-                    <img src="CRM.png" alt="Medium Article 1">
+                    <img src="images/CRM.png" alt="Medium Article 1">
                     <div class="portfolio-overlay">
                         <h3>Importance of CRM Knowledge for SQA Engineers: Early Adoption, Growth, Challenges, and Benefits</h3>
                         <a href="https://medium.com/@dimuthcbandara97/importance-of-crm-knowledge-for-sqa-engineers-early-adoption-growth-challenges-and-benefits-e47fc76b749b" class="btn btn-secondary" target="_blank">Read on Medium</a>
@@ -2061,14 +2147,14 @@
                 </div>
                 <div class="portfolio-info">
                     <h3>Importance of CRM Knowledge for SQA Engineers: Early Adoption, Growth, Challenges, and Benefits</h3>
-                    <p>CRM systems have evolved from basic contact management to integrated platforms, enhancing customer interactions and business operations. Technological advancements like cloud computing and big data have driven their growth. SQA engineers ensure CRM reliability, addressing challenges like data quality and user adoption, while supporting customer-centric business strategies </p>
+                    <p>CRM systems have evolved from basic contact management to integrated platforms, enhancing customer interactions and business operations. Technological advancements like cloud computing and big data have driven their growth. SQA engineers ensure CRM reliability, addressing challenges like data quality and user adoption, while supporting customer-centric business strategies. <b>This article also highlights the importance of research and development (R&D) in evolving CRM systems for quality assurance and data-driven improvements.</b></p>
                 </div>
             </div>
 
             <!-- Medium Article 2 -->
             <div class="portfolio-item">
                 <div class="portfolio-img">
-                    <img src="to.png" >
+                    <img src="images/to.png" >
                     <div class="portfolio-overlay">
                         <h3>Strategies Against Toxic HR in Sri Lankan Tech Startups: Legal and Ethical Warfare</h3>
                         <a href="https://medium.com/@dimuthcbandara97/strategies-against-toxic-hr-in-sri-lankan-tech-startups-legal-and-ethical-warfare-373f89509d08" class="btn btn-secondary" target="_blank">Read on Medium</a>
@@ -2084,7 +2170,7 @@
             <!-- Medium Article 3 -->
             <div class="portfolio-item">
                 <div class="portfolio-img">
-                    <img src="fall.png" alt="Medium Article 3">
+                    <img src="images/fall.png" alt="Medium Article 3">
                     <div class="portfolio-overlay">
                         <h3>Transitioning from Fall to Growth: A Self-Directed Learning and Development Strategy</h3>
                         <a href="https://medium.com/@dimuthcbandara97/transitioning-from-fall-to-growth-a-self-directed-learning-and-development-strategy-953708d7b367" class="btn btn-secondary" target="_blank">Read on Medium</a>
@@ -2099,7 +2185,7 @@
              <!-- Medium Article 1 -->
              <div class="portfolio-item">
                 <div class="portfolio-img">
-                    <img src="material.png" alt="Medium Article 1">
+                    <img src="images/material.png" alt="Medium Article 1">
                     <div class="portfolio-overlay">
                         <h3>SAP MM and Logistics Knowledge for Software Quality Engineers</h3>
                         <a href="https://medium.com/@dimuthcbandara97/sap-mm-and-logistics-knowledge-for-software-quality-engineers-411facf0352e" class="btn btn-secondary" target="_blank">Read on Medium</a>
@@ -2107,14 +2193,14 @@
                 </div>
                 <div class="portfolio-info">
                     <h3>SAP MM and Logistics Knowledge for Software Quality Engineers</h3>
-                    <p>Software Quality Engineers (SQEs) ensure SAP MM and Logistics systems meet business needs by validating robustness, integration, and performance. They require supply chain and SAP expertise to optimize processes, enhance competitiveness, and support sustainability. SQA involves early fault detection, compliance with standards, and process controls to improve reliability, safety, and cost efficiency in software development. </p>
+                    <p>Software Quality Engineers (SQEs) ensure SAP MM and Logistics systems meet business needs by validating robustness, integration, and performance. They require supply chain and SAP expertise to optimize processes, enhance competitiveness, and support sustainability. SQA involves early fault detection, compliance with standards, and process controls to improve reliability, safety, and cost efficiency in software development. <b>The article discusses the intersection of data engineering and software quality assurance in SAP MM and logistics, emphasizing the role of R&D in process optimization.</b></p>
                 </div>
             </div>
 
             <!-- Medium Article 2 -->
             <div class="portfolio-item">
                 <div class="portfolio-img">
-                    <img src="zero.png" alt="Medium Article 2">
+                    <img src="images/zero.png" alt="Medium Article 2">
                     <div class="portfolio-overlay">
                         <h3>Autonomous Quality Assurance in Continuous Deployment Pipelines</h3>
                         <a href="https://medium.com/@yourusername/ci-cd-for-qa-engineers" class="btn btn-secondary" target="_blank">Read on Medium</a>
@@ -2122,14 +2208,14 @@
                 </div>
                 <div class="portfolio-info">
                     <h3>Autonomous Quality Assurance in Continuous Deployment Pipelines</h3>
-                    <p>Modern cloud-native apps, with microservices and AI, demand advanced QA beyond traditional methods. Autonomous QA bots enable real-time monitoring, detecting regressions and anomalies in dynamic environments. By leveraging AI-driven validation, they enhance accuracy, scalability, and reliability, ensuring high performance and minimizing downtime in complex, continuously evolving systems.</p>
+                    <p>Modern cloud-native apps, with microservices and AI, demand advanced QA beyond traditional methods. Autonomous QA bots enable real-time monitoring, detecting regressions and anomalies in dynamic environments. By leveraging AI-driven validation, they enhance accuracy, scalability, and reliability, ensuring high performance and minimizing downtime in complex, continuously evolving systems. <b>Data engineering and R&D are critical for building and maintaining these autonomous QA solutions.</b></p>
                 </div>
             </div>
 
             <!-- Medium Article 3 -->
             <div class="portfolio-item">
                 <div class="portfolio-img">
-                    <img src="cx.png" alt="Medium Article 3">
+                    <img src="images/cx.png" alt="Medium Article 3">
                     <div class="portfolio-overlay">
                         <h3>CX-Oriented QA Framework for B2B/B2C Applications: Integrating Metrics with Test Coverage</h3>
                         <a href="https://medium.com/@dimuthcbandara97/cx-oriented-qa-framework-for-b2b-b2c-applications-integrating-metrics-with-test-coverage-61ce21897a3b" class="btn btn-secondary" target="_blank">Read on Medium</a>
@@ -2137,14 +2223,14 @@
                 </div>
                 <div class="portfolio-info">
                     <h3>CX-Oriented QA Framework for B2B/B2C Applications: Integrating Metrics with Test Coverage</h3>
-                    <p>Modern QA must prioritize customer experience alongside functionality. Traditional defect-focused approaches risk poor user satisfaction and brand damage. This paper presents a CX-driven QA framework linking Net Promoter Score, churn data, and defect analysis to create feedback loops that shape testing strategies—preventing dissatisfaction through proactive, user-centric quality assurance.</p>
+                    <p>Modern QA must prioritize customer experience alongside functionality. Traditional defect-focused approaches risk poor user satisfaction and brand damage. This paper presents a CX-driven QA framework linking Net Promoter Score, churn data, and defect analysis to create feedback loops that shape testing strategies—preventing dissatisfaction through proactive, user-centric quality assurance. <b>Integrating data engineering and R&D enables more effective, data-driven QA strategies for B2B/B2C applications.</b></p>
                 </div>
             </div>
 
              <!-- Medium Article 1 -->
             <div class="portfolio-item">
                 <div class="portfolio-img">
-                    <img src="QAaas.png" alt="Medium Article 1">
+                    <img src="images/QAaas.png" alt="Medium Article 1">
                     <div class="portfolio-overlay">
                         <h3>Service-Oriented Quality Assurance as a Service (QAaaS) Delivery Model</h3>
                         <a href="https://medium.com/@dimuthcbandara97/service-oriented-quality-assurance-as-a-service-qaaas-delivery-model-9e025259ef91" class="btn btn-secondary" target="_blank">Read on Medium</a>
@@ -2152,14 +2238,14 @@
                 </div>
                 <div class="portfolio-info">
                     <h3>Service-Oriented Quality Assurance as a Service (QAaaS) Delivery Model</h3>
-                    <p>Quality Assurance as a Service (QAaaS) transforms traditional QA into a flexible, service-oriented model with defined SLAs and measurable outcomes. It enables cost reduction, access to specialized expertise, and efficient testing processes. Successful implementation requires clear service design, performance metrics, and strategic outsourcing to align with business goals while minimizing risks.</p>
+                    <p>Quality Assurance as a Service (QAaaS) transforms traditional QA into a flexible, service-oriented model with defined SLAs and measurable outcomes. It enables cost reduction, access to specialized expertise, and efficient testing processes. Successful implementation requires clear service design, performance metrics, and strategic outsourcing to align with business goals while minimizing risks. <b>QAaaS models benefit from R&D-driven innovation and data engineering for scalable, reliable quality assurance.</b></p>
                 </div>
             </div>
 
             <!-- Medium Article 2 -->
             <div class="portfolio-item">
                 <div class="portfolio-img">
-                    <img src="ethical.png" alt="Medium Article 2">
+                    <img src="images/ethical.png" alt="Medium Article 2">
                     <div class="portfolio-overlay">
                         <h3>Ethical Hacking Fundamentals for Software Quality Engineers</h3>
                         <a href="https://medium.com/@dimuthcbandara97/ethical-hacking-fundamentals-for-software-quality-engineers-key-terminologies-network-overview-bb34c5212f65" class="btn btn-secondary" target="_blank">Read on Medium</a>
@@ -2167,14 +2253,14 @@
                 </div>
                 <div class="portfolio-info">
                     <h3>Ethical Hacking Fundamentals for Software Quality Engineers</h3>
-                    <p>Ethical hacking is vital for software quality engineers to proactively identify vulnerabilities and strengthen system security. By simulating attacks, they anticipate threats, integrate robust defenses early, and reduce remediation costs. Mastery of security tools, networking, and threat assessment ensures resilient systems, safeguarding sensitive data against evolving cyber risks.</p>
+                    <p>Ethical hacking is vital for software quality engineers to proactively identify vulnerabilities and strengthen system security. By simulating attacks, they anticipate threats, integrate robust defenses early, and reduce remediation costs. Mastery of security tools, networking, and threat assessment ensures resilient systems, safeguarding sensitive data against evolving cyber risks. <b>R&D in cybersecurity and data engineering is essential for staying ahead of emerging threats.</b></p>
                 </div>
             </div>
 
             <!-- Medium Article 3 -->
             <div class="portfolio-item">
                 <div class="portfolio-img">
-                    <img src="HIPAA.png" alt="Medium Article 3">
+                    <img src="images/HIPAA.png" alt="Medium Article 3">
                     <div class="portfolio-overlay">
                         <h3>AI-Driven Regulatory Compliance Verification in Healthcare Software Quality Engineering</h3>
                         <a href="https://medium.com/@yourusername/introduction-to-postman-api-testing" class="btn btn-secondary" target="_blank">Read on Medium</a>
@@ -2182,7 +2268,7 @@
                 </div>
                 <div class="portfolio-info">
                     <h3>AI-Driven Regulatory Compliance Verification in Healthcare Software Quality Engineering</h3>
-                    <p>Healthcare software must comply with strict regulations (HIPAA, GDPR, etc.), but manual verification struggles with evolving standards. AI-driven quality engineering enables proactive compliance by automating regulatory mapping, real-time monitoring, and early violation detection. This reduces manual effort while ensuring continuous adherence to patient safety and data security requirements.</p>
+                    <p>Healthcare software must comply with strict regulations (HIPAA, GDPR, etc.), but manual verification struggles with evolving standards. AI-driven quality engineering enables proactive compliance by automating regulatory mapping, real-time monitoring, and early violation detection. This reduces manual effort while ensuring continuous adherence to patient safety and data security requirements. <b>Research and development (R&D) and data engineering are key to advancing regulatory compliance in healthcare software quality engineering.</b></p>
                 </div>
             </div>
 
@@ -2563,6 +2649,20 @@
                 </div>
             </div>
         </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section" id="faq">
+      <div class="container">
+        <h2 class="section-title reveal fade-bottom">FAQ – Software Quality Engineering, Data Engineering & R&D</h2>
+        <div class="faq-list">
+          <div class="faq-item"><b>What does a Software Quality Engineer (SDET) do?</b><br> An SDET designs, develops, and maintains automated test frameworks, ensuring software quality through rigorous testing and continuous integration.</div>
+          <div class="faq-item"><b>How does Data Engineering support QA?</b><br> Data engineering enables efficient test data management, analytics, and reporting, supporting data-driven quality assurance and test automation.</div>
+          <div class="faq-item"><b>What is the role of R&D in software testing?</b><br> Research and Development (R&D) drives innovation in QA methodologies, tools, and compliance, enabling organizations to stay ahead in quality engineering.</div>
+          <div class="faq-item"><b>What tools do you use for QA Automation?</b><br> I use Playwright, Selenium, JMeter, Jenkins, Postman, and other leading tools for test automation and performance testing.</div>
+          <div class="faq-item"><b>How do you combine research, data engineering, and QA?</b><br> By integrating research-driven approaches, advanced data engineering, and automation, I deliver comprehensive, scalable, and innovative QA solutions.</div>
+        </div>
+      </div>
     </section>
 
     <!-- Footer -->
